@@ -1,0 +1,25 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApplication15
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int a, b, d;
+            Console.Write("Введите длину отрезка А: ");
+            a = int.Parse(Console.ReadLine());
+            Console.Write("Введите длину отрезка В: ");
+            b = int.Parse(Console.ReadLine());
+            d = a / b;
+            a = a - (b * d);
+            Console.Write("Свободная часть отрезка А составляет ");
+            Console.WriteLine(a);
+            Console.ReadKey();
+        }
+    }
+}
